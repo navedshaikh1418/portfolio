@@ -5,10 +5,8 @@
   --header-height: 3rem;
   --font-semi: 600;
   /*===== Colors =====*/
-  /* Teal color scheme based on the profile photo background */
-  --hue-color: 174;
-  --first-color: hsl(var(--hue-color), 63%, 43%);
-  --second-color: hsl(var(--hue-color), 56%, 12%);
+  --first-color: #4070F4;
+  --second-color: #0E2431;
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
@@ -189,6 +187,7 @@ img {
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
+  font-weight: 700;
 }
 .home__title-color {
   color: var(--first-color);
@@ -213,7 +212,7 @@ img {
   width: 260px;
 }
 .home__blob {
-  fill: var(--first-color);
+  fill: #40E0D0;
   filter: drop-shadow(0 12px 12px rgba(0,0,0,0.15));
   transition: all 0.3s ease;
 }
@@ -225,8 +224,7 @@ img {
   width: 400px;
   height: 400px;
   object-fit: cover;
-  object-position: center 20%;
-  transform: scale(1.1);
+  object-position: center;
 }
 
 /*BUTTONS*/
@@ -238,9 +236,11 @@ img {
   font-weight: var(--font-semi);
   border-radius: 0.5rem;
   transition: 0.3s;
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
 }
 .button:hover {
-  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 36px rgba(64, 112, 244, 0.25);
+  transform: translateY(-3px);
 }
 
 /* ===== ABOUT =====*/
@@ -253,17 +253,17 @@ img {
 }
 .about__img {
   width: 200px;
-  height: 250px;
-  border-radius: .5rem;
+  height: 200px;
+  border-radius: 50%;
   overflow: hidden;
-  margin: 0 auto;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  margin: auto;
+  box-shadow: 0 4px 25px rgba(14,36,49,.15);
 }
 .about__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center;
 }
 
 /* ===== SKILLS =====*/
@@ -337,12 +337,12 @@ img {
   width: 85%;
 }
 .skills__img {
-  width: 300px;
-  height: 300px;
-  border-radius: .5rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
   object-fit: cover;
-  object-position: center 20%;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  object-position: center;
+  box-shadow: 0 4px 25px rgba(14,36,49,.15);
 }
 .skills__img:hover {
   transform: translateY(-5px);
