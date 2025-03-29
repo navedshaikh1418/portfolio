@@ -214,12 +214,18 @@ img {
 }
 .home__blob {
   fill: var(--first-color);
+  filter: drop-shadow(0 12px 12px rgba(0,0,0,0.15));
+  transition: all 0.3s ease;
+}
+.home__blob:hover {
+  filter: drop-shadow(0 16px 16px rgba(0,0,0,0.2));
+  transform: translateY(-5px);
 }
 .home__blob-img {
   width: 400px;
   height: 400px;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
 }
 
 /*BUTTONS*/
@@ -250,12 +256,18 @@ img {
   border-radius: .5rem;
   overflow: hidden;
   margin: 0 auto;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.about__img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
 }
 .about__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
 }
 
 /* ===== SKILLS =====*/
@@ -330,6 +342,12 @@ img {
 }
 .skills__img {
   border-radius: 0.5rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.skills__img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
 }
 
 /* ===== WORK =====*/
